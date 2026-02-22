@@ -1,0 +1,29 @@
+{
+  "name": "electron-gpt-app",
+  "version": "1.0.0",
+  "description": "Electron app with ChatGPT API integration and prompt ruleset enforcement",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.yourcompany.electron-gpt-app",
+    "productName": "GPT App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ]
+  }
+}
